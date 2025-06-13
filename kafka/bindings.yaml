@@ -1,1 +1,120 @@
-
+---
+apiVersion: platform.confluent.io/v1beta1
+kind: ConfluentRoleBinding
+metadata:
+  name: rb-adrian-kasprzyk77-gmail-com-ext--adriankasprzyk77gmail-onmicrosoft-com-fd-equities
+  namespace: cn-confluentplatform-i01
+spec:
+  principal:
+    type: user
+    name: adrian.kasprzyk77_gmail.com#EXT#@adriankasprzyk77gmail.onmicrosoft.com
+  resourcePattern:
+    name: fd_equities
+    patternType: LITERAL
+    resourceType: TOPIC
+  role: DEVELOPER_READ
+---
+apiVersion: platform.confluent.io/v1beta1
+kind: ConfluentRoleBinding
+metadata:
+  name: rb-adrian-kasprzyk77-gmail-com-ext--adriankasprzyk77gmail-onmicrosoft-com-fd-data
+  namespace: cn-confluentplatform-i01
+spec:
+  principal:
+    type: user
+    name: adrian.kasprzyk77_gmail.com#EXT#@adriankasprzyk77gmail.onmicrosoft.com
+  resourcePattern:
+    name: fd_data
+    patternType: LITERAL
+    resourceType: TOPIC
+  role: DEVELOPER_READ
+---
+apiVersion: platform.confluent.io/v1beta1
+kind: ConfluentRoleBinding
+metadata:
+  name: rb-adrian-kasprzyk77-gmail-com-ext--adriankasprzyk77gmail-onmicrosoft-com-fd-data-nextsession
+  namespace: cn-confluentplatform-i01
+spec:
+  principal:
+    type: user
+    name: adrian.kasprzyk77_gmail.com#EXT#@adriankasprzyk77gmail.onmicrosoft.com
+  resourcePattern:
+    name: fd_data_nextsession
+    patternType: LITERAL
+    resourceType: TOPIC
+  role: DEVELOPER_READ
+---
+apiVersion: platform.confluent.io/v1beta1
+kind: ConfluentRoleBinding
+metadata:
+  name: rb-adrian-kasprzyk77-gmail-com-ext--adriankasprzyk77gmail-onmicrosoft-com-avro-schema
+  namespace: cn-confluentplatform-i01
+spec:
+  principal:
+    type: user
+    name: adrian.kasprzyk77_gmail.com#EXT#@adriankasprzyk77gmail.onmicrosoft.com
+  resourcePattern:
+    name: avro_schema
+    patternType: LITERAL
+    resourceType: TOPIC
+  role: DEVELOPER_READ
+---
+apiVersion: platform.confluent.io/v1beta1
+kind: ConfluentRoleBinding
+metadata:
+  name: rb-iddstestuser2-adriankasprzyk77gmail-onmicrosoft-com-bbo-derivatives-delayed
+  namespace: cn-confluentplatform-i01
+spec:
+  principal:
+    type: user
+    name: iddstestuser2@adriankasprzyk77gmail.onmicrosoft.com
+  resourcePattern:
+    name: bbo_derivatives_delayed
+    patternType: LITERAL
+    resourceType: TOPIC
+  role: DEVELOPER_READ
+---
+apiVersion: platform.confluent.io/v1beta1
+kind: ConfluentRoleBinding
+metadata:
+  name: rb-iddstestuser2-adriankasprzyk77gmail-onmicrosoft-com-fd-data
+  namespace: cn-confluentplatform-i01
+spec:
+  principal:
+    type: user
+    name: iddstestuser2@adriankasprzyk77gmail.onmicrosoft.com
+  resourcePattern:
+    name: fd_data
+    patternType: LITERAL
+    resourceType: TOPIC
+  role: DEVELOPER_READ
+---
+apiVersion: platform.confluent.io/v1beta1
+kind: ConfluentRoleBinding
+metadata:
+  name: rb-iddstestuser2-adriankasprzyk77gmail-onmicrosoft-com-fd-data-nextsession
+  namespace: cn-confluentplatform-i01
+spec:
+  principal:
+    type: user
+    name: iddstestuser2@adriankasprzyk77gmail.onmicrosoft.com
+  resourcePattern:
+    name: fd_data_nextsession
+    patternType: LITERAL
+    resourceType: TOPIC
+  role: DEVELOPER_READ
+---
+apiVersion: platform.confluent.io/v1beta1
+kind: ConfluentRoleBinding
+metadata:
+  name: rb-iddstestuser2-adriankasprzyk77gmail-onmicrosoft-com-avro-schema
+  namespace: cn-confluentplatform-i01
+spec:
+  principal:
+    type: user
+    name: iddstestuser2@adriankasprzyk77gmail.onmicrosoft.com
+  resourcePattern:
+    name: avro_schema
+    patternType: LITERAL
+    resourceType: TOPIC
+  role: DEVELOPER_READ
